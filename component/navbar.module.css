@@ -1,11 +1,15 @@
 .navbar {
     background-color: #f2f2f2;
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   
   .navbarMenu {
     list-style: none;
     display: flex;
+    align-items: center;
   }
   
   .navbarItem {
@@ -15,7 +19,8 @@
   .navbarLink {
     text-decoration: none;
     color: #333;
-    padding: 5px;
+    padding: 8px 12px;
+    border-radius: 4px;
   }
   
   .navbarLink:hover {
