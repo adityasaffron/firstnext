@@ -8,22 +8,22 @@ const Navbar = () => {
       <ul className={styles.navbarMenu}>
         <li className={styles.navbarItem}>
           <Link href="/" passHref>
-          Home
+            <span className={styles.navbarLink}>Home</span>
           </Link>
         </li>
         <li className={styles.navbarItem}>
           <Link href="/catalog" passHref>
-            Catelog
+            <span className={styles.navbarLink}>Catalog</span>
           </Link>
         </li>
         <li className={styles.navbarItem}>
           <Link href="/contact" passHref>
-            Contact
+            <span className={styles.navbarLink}>Contact</span>
           </Link>
         </li>
         <li className={styles.navbarItem}>
           <Link href="/login" passHref>
-            Login
+            <span className={styles.navbarLink}>Login/Register</span>
           </Link>
         </li>
       </ul>
