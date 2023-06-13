@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { getProducts } from "../utills/shopify";
 import styles from "./home.module.css";
+import Navbar from "../component/Navbar";
 
 export default async function Home() {
   let pro = await getProducts();
@@ -13,7 +14,7 @@ export default async function Home() {
 
   return (
     <div>
-      <h1>Raja Saini</h1>
+     <Navbar />
       <ul className={styles['product-list']}>
         {products.map((product) => (
           <li key={product.id} className={styles['product-item']}>
